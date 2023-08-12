@@ -1,0 +1,28 @@
+#color_bar {
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    height: 20px;
+    display: grid;
+    grid-template-columns: 5fr 65fr 5fr 65fr 25fr 5fr 65fr 5fr 50fr 80fr 5fr 65fr;
+    font-size:6pt;
+    top:0px;
+    left:0px;
+    position:fixed;
+}
+#color_bar div {
+    height: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+}
+#pA {
+    background-color: white;
+}
+
+#pC {
+    background-color: rgb(70, 70, 70);
+}
+
+#pL {
+    background-color: white;
+}

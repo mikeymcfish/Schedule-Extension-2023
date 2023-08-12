@@ -1,0 +1,65 @@
+Week,Day,Time,Color,Title,Start Time,End Time,Color Mapping,School
+Navy,A,8:00-8:05,none,Advisory,08:00,08:05,white,Upper School
+Navy,A,8:05-9:10,vm1,,08:05,09:10,violet,Upper School
+Navy,A,9:15-10:20,pm1,,09:15,10:20,pink,Upper School
+Navy,A,10:20-10:45,none,Community Time,10:20,10:45,white,Upper School
+Navy,A,10:50-11:55,rm1,,10:50,11:55,red,Upper School
+Navy,A,12:00-12:50,none,Lunch / Clubs,12:00,12:50,white,Upper School
+Navy,A,12:50-2:10,ym1,,12:50,14:10,yellow,Upper School
+Navy,A,2:15-3:20,om1,,14:15,15:20,orange,Upper School
+Navy,B,8:00-8:05,none,Advisory,08:00,08:05,white,Upper School
+Navy,B,8:05-9:10,gm1,,08:05,09:10,green,Upper School
+Navy,B,9:15-10:20,bm1,,09:15,10:20,blue,Upper School
+Navy,B,10:20-10:45,none,Community Time,10:20,10:45,white,Upper School
+Navy,B,10:50-11:55,tm1,,10:50,11:55,tan,Upper School
+Navy,B,12:00-12:50,none,Lunch / Clubs,12:00,12:50,white,Upper School
+Navy,B,12:50-2:10,vm2,,12:50,14:10,violet,Upper School
+Navy,B,2:15-3:20,pm2,,14:15,15:20,pink,Upper School
+Navy,C,8:00-8:05,none,Advisory,08:00,08:05,white,Upper School
+Navy,C,8:05-9:10,ym2,,08:05,09:10,yellow,Upper School
+Navy,C,9:15-10:20,rm2,,09:15,10:20,red,Upper School
+Navy,C,10:20-10:45,none,Community Time,10:20,10:45,white,Upper School
+Navy,C,10:50-11:55,om2,,10:50,11:55,orange,Upper School
+Navy,C,12:00-12:50,none,Lunch / Clubs,12:00,12:50,white,Upper School
+Navy,C,12:50-2:10,gm2,,12:50,14:10,green,Upper School
+Navy,C,2:15-3:20,bm2,,14:15,15:20,blue,Upper School
+Navy,D,8:00-8:05,none,Advisory,08:00,08:05,white,Upper School
+Navy,D,8:05-9:10,tm2,,08:05,09:10,tan,Upper School
+Navy,D,9:15-10:20,vm1,,09:15,10:20,violet,Upper School
+Navy,D,10:20-10:45,none,Community Time,10:20,10:45,white,Upper School
+Navy,D,10:50-11:55,pm1,,10:50,11:55,pink,Upper School
+Navy,D,12:00-12:50,none,Lunch / Clubs,12:00,12:50,white,Upper School
+Navy,D,12:50-2:10,rm1,,12:50,14:10,red,Upper School
+Navy,D,2:15-3:20,ym1,,14:15,15:20,yellow,Upper School
+Navy,E,8:00-8:05,none,Advisory,08:00,08:05,white,Upper School
+Navy,E,8:05-9:10,om1,,08:05,09:10,orange,Upper School
+Navy,E,9:15-10:20,gm1,,09:15,10:20,green,Upper School
+Navy,E,10:20-10:45,none,Community Time,10:20,10:45,white,Upper School
+Navy,E,10:50-11:55,bm1,,10:50,11:55,blue,Upper School
+Navy,E,12:00-12:50,none,Lunch / Clubs,12:00,12:50,white,Upper School
+Navy,E,12:50-2:10,tm1,,12:50,14:10,tan,Upper School
+Navy,E,2:15-3:20,vm2,,14:15,15:20,violet,Upper School
+Navy,F,8:00-8:05,none,Advisory,08:00,08:05,white,Upper School
+Navy,F,8:05-9:10,pm2,,08:05,09:10,pink,Upper School
+Navy,F,9:15-10:20,rm2,,09:15,10:20,red,Upper School
+Navy,F,10:20-10:45,none,Community Time,10:20,10:45,white,Upper School
+Navy,F,10:50-11:55,ym2,,10:50,11:55,yellow,Upper School
+Navy,F,12:00-12:50,none,Lunch / Clubs,12:00,12:50,white,Upper School
+Navy,F,12:50-2:10,om2,,12:50,14:10,orange,Upper School
+Navy,F,2:15-3:20,gm2,,14:15,15:20,green,Upper School
+Navy,G,8:00-8:05,none,Advisory,08:00,08:05,white,Upper School
+Navy,G,8:05-9:10,bm2,,08:05,09:10,blue,Upper School
+Navy,G,9:15-10:20,tm2,,09:15,10:20,tan,Upper School
+Navy,G,10:20-10:45,none,Community Time,10:20,10:45,white,Upper School
+Navy,G,10:50-11:55,vm1,,10:50,11:55,violet,Upper School
+Navy,G,12:00-12:50,none,Lunch / Clubs,12:00,12:50,white,Upper School
+Navy,G,12:50-2:10,pm1,,12:50,14:10,pink,Upper School
+Navy,G,2:15-3:20,rm1,,14:15,15:20,red,Upper School
+Navy,H,8:00-8:05,none,Advisory,08:00,08:05,white,Upper School
+Navy,H,8:05-9:10,ym1,,08:05,09:10,yellow,Upper School
+Navy,H,9:15-10:20,om1,,09:15,10:20,orange,Upper School
+Navy,H,10:20-10:45,none,Community Time,10:20,10:45,white,Upper School
+Navy,H,10:50-11:55,gm1,,10:50,11:55,green,Upper School
+Navy,H,12:00-12:50,none,Lunch / Clubs,12:00,12:50,white,Upper School
+Navy,H,12:50-2:10,bm1,,12:50,14:10,blue,Upper School
+Navy,H,2:15-3:20,tm1,,14:15,15:20,tan,Upper School
