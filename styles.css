@@ -1,17 +1,20 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
 #color_bar {
     width: 100%;
     background-color: rgb(238, 238, 238);
     height: 20px;
     display: grid;
     grid-template-columns: 5fr 65fr 5fr 65fr 25fr 5fr 65fr 5fr 50fr 80fr 5fr 65fr;
-    font-size:6pt;
     top:0px;
     left:0px;
     position:fixed;
+    border-bottom: 1px solid black;
 }
 #color_bar div {
     height: 20px;
-    border: solid;
+    border: none;
     border-width: 1px;
     border-color: black;
 }
@@ -25,4 +28,35 @@
 
 #pL {
     background-color: white;
+}
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, .5);
+    color: black;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 0%; /* Position the tooltip below the container */
+    left: 50%;
+    transform: translateX(-50%); /* Center the tooltip horizontally */
+    opacity: 0;
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.5s, visibility 0.5s step-end; /* Transition for both properties */
+  
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+.tooltip-container:hover .tooltip {
+    opacity: 1; /* Visible */
+    visibility: visible; /* Visible */
+    transition: opacity 0.5s, visibility 0s step-start; /* Transition for both properties */
 }
