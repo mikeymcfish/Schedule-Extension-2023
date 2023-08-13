@@ -3,6 +3,7 @@ body {
     margin-top: 14px;
 }
 #color_bar {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     background-color: rgb(238, 238, 238);
     display: grid;
