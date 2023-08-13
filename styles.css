@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(116, 116, 116);
-  }
+    margin-top: 14px;
+}
 #color_bar {
     width: 100%;
     background-color: rgb(238, 238, 238);
@@ -10,7 +10,7 @@ body {
     top:0px;
     left:0px;
     position:fixed;
-    z-index: -10;
+    z-index: 10;
     /* border-bottom: 1px solid black; */
 }
 #color_bar div {
@@ -49,7 +49,7 @@ body {
     color: none;
     text-align: center;
     position: absolute;
-    z-index: 1;
+    z-index: 101;
     top: 0%; /* Position the tooltip below the container */
     left: 50%;
     transform: translateX(-50%); /* Center the tooltip horizontally */
@@ -72,7 +72,7 @@ body {
 
 #arrow {
     left: 0%;
-    top: 14px;
+    top: 10px;
     position:fixed;
     width: 0;
     height: 0;
@@ -81,6 +81,7 @@ body {
     border-left-color: rgba(0, 0, 0, 0);
     border-right-color: rgba(0, 0, 0, 0);
     border-bottom: 10px solid black;
+    z-index: 102;
 }
 
 #fade-out {
@@ -89,7 +90,7 @@ body {
     background: linear-gradient(rgba(255, 255, 255, 0.486), transparent);
     position: fixed;
     top:14px;
-    z-index: -5;
+    z-index: 99;
     border: none;
     margin-left: none;
     left: 0%;
