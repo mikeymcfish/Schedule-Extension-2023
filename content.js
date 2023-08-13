@@ -22,7 +22,7 @@ window.onload = function() {
     console.log(time);
     // currTime = time - 800;
     // currLeft = (time/720) * 100;
-    currLeft = (time/1600) * 100
+    currLeft = (time/2400) * 100;
     floatLeft = currLeft + 0.0;
     stringLeft = floatLeft + "%";
     console.log(stringLeft);
