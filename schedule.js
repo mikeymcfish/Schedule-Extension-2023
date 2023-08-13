@@ -35,7 +35,24 @@ function setColors(day) {
     document.getElementById("p4").querySelector('.tooltip').textContent = day[4];
 }
 
+function setArrow() {
+    //day is 720 min
+    //for testing using
+    var date = new Date();
+    var time = date.getHours() * 100 + date.getMinutes();
+    console.log(time);
+    // currTime = time - 800;
+    // currLeft = (time/720) * 100;
+    currLeft = (time/2400) * 100
+    floatLeft = currLeft + 0.0;
+    stringLeft = floatLeft + "%";
+    console.log(stringLeft);
+    document.getElementById("arrow").style.left = stringLeft;
+}
+
 function getToday() {
+    setArrow();
+    setInterval(setArrow, 60000);
     const currentDate = new Date().toISOString().split('T')[0];
     fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vS3-6MgEPFUcHbLfa7q97_I6BI8CJvLZA0FDPxMwKOEFKYZs1GAw_4CRt6oOIWhMEITpOKzYrW2u7Ef/pub?gid=0&single=true&output=csv')
         .then(response => response.text())
