@@ -31,24 +31,36 @@ function getToday() {
             // Splitting the CSV data into lines and parsing
             const lines = data.split('\n');
             for (let i = 1; i < lines.length; i++) {
-            const [date, scheduleDay] = lines[i].split(',');
+            const [date, scheduleDay, week] = lines[i].split(',');
                 if (date === currentDate) {
                     correctDay = scheduleDay.trim()
                     console.log(correctDay)
                     colors = schedule.NAVY[correctDay];
                     let dayIcon = correctDay.slice(-1);
-                    setIcon(`images/${dayIcon}-16.png`);
+                    setIcon(`images/${week}/${dayIcon}-16.png`);
                     resolve(colors); // resolve the promise with colors
+                    showAll();
                     return;
                 }
             }
               // Example usage
               
             console.log(`No schedule found for ${currentDate}`);
+            setIcon(`images/icon16.png`);
+            hideAll();
         })
         .catch(error => console.error('An error occurred:', error));
     });
 }
+
+function hideAll() {
+
+}
+
+function showAll() {
+
+}
+
 function setIcon(iconFilename) {
     console.log(iconFilename);
     if(chrome.action) {

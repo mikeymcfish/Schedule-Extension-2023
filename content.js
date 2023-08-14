@@ -13,7 +13,23 @@ window.onload = function() {
               setArrow();
             }
           });
+          chrome.runtime.sendMessage({type: "hideAll"}, function(response) {
+            hideBar();
+          });
+          chrome.runtime.sendMessage({type: "showAll"}, function(response) {
+            showBar();
+          });
       });
+  }
+
+  function hideBar() {
+    console.log("hiding bar");
+    document.getElementById("top-bar").style.visibility = "hidden";
+  }
+
+  function showBar() {
+    console.log("showing bar");
+    document.getElementById("top-bar").style.visibility = "visible";
   }
 
  function setArrow() {
