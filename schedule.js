@@ -22,17 +22,16 @@ document.addEventListener("DOMContentLoaded", function() {
   
 function setColors(day) {
     console.log(day);
-    document.getElementById("p0").style.backgroundColor = day[0];
-    document.getElementById("p1").style.backgroundColor = day[1];
-    document.getElementById("p2").style.backgroundColor = day[2];
-    document.getElementById("p3").style.backgroundColor = day[3];
-    document.getElementById("p4").style.backgroundColor = day[4];
-
-    document.getElementById("p0").querySelector('.tooltip').textContent = day[0];
-    document.getElementById("p1").querySelector('.tooltip').textContent = day[1];
-    document.getElementById("p2").querySelector('.tooltip').textContent = day[2];
-    document.getElementById("p3").querySelector('.tooltip').textContent = day[3];
-    document.getElementById("p4").querySelector('.tooltip').textContent = day[4];
+    console.log("here");
+    const upperElements = document.querySelectorAll('.Upper div');
+    const middleElements = document.querySelectorAll('.Middle div');
+    
+    for (let i = 0; i < day.length; i++) {
+        upperElements[i].style.backgroundColor = day[i];
+        upperElements[i].querySelector('.tooltip').textContent = day[i];
+        middleElements[i].style.backgroundColor = day[i];
+        middleElements[i].querySelector('.tooltip').textContent = day[i];
+    }
 }
 
 function setArrow() {
@@ -64,6 +63,7 @@ function getToday() {
         if (date === currentDate) {
             correctDay = scheduleDay.trim()
             console.log(correctDay)
+            console.log("hi");
             colors = schedule.NAVY[correctDay];
             setColors(colors);
             return;

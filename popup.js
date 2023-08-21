@@ -12,17 +12,40 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function setColors(colors) {
     console.log("set colors");
-    for (let i = 0; i < colors.length; i++) {
-      document.getElementById(`p${i}`).style.backgroundColor = colors[i];
-      document.getElementById(`p${i}`).querySelector('.tooltip').textContent = colors[i];
+    console.log(colors);
+    if (colors.upper && colors.middle) {
+        const upperElements = document.querySelectorAll('.Upper div');
+        const middleElements = document.querySelectorAll('.Middle div');
+    
+        for (let i = 0; i < colors.upper.length; i++) {
+            const elementId = `p${i}`;
+            console.log(elementId);
+            const element = document.querySelectorAll('.Upper #' + elementId)[0];
+            console.log(element);
+            element.style.backgroundColor = colors.upper[i];
+            const tooltip = element.querySelector('.tooltip');
+            if (tooltip) {
+                tooltip.textContent = colors.upper[i];
+            }
+  
+        }
+    
+        for (let i = 0; i < colors.middle.length; i++) {
+            console.log(i);
+            const elementId = `p${i}`;
+
+            const element = document.querySelectorAll('.Middle #' + elementId)[0];
+            element.style.backgroundColor = colors.middle[i];
+            const tooltip = element.querySelector('.tooltip');
+            if (tooltip) {
+                tooltip.textContent = colors.middle[i];
+            }
+
+        }
     }
     return true;
-  }
+}
 
-// chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-//     if (message.colors) {
-//       setColors(message.colors);
-//     }
-//   });
+
 
 console.log("popup");

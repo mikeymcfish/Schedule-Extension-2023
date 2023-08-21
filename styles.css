@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin-top: 14px;
 }
-#color_bar {
+#color_bar.Upper {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     background-color: rgb(238, 238, 238);
@@ -10,31 +10,43 @@ body {
     grid-template-columns: 5fr 65fr 5fr 65fr 25fr 5fr 65fr 5fr 50fr 80fr 5fr 65fr;
     top:0px;
     left:0px;
-    position:fixed;
+    position:relative;
     z-index: 10;
     /* border-bottom: 1px solid black; */
 }
-#color_bar div {
-    height: 14px;
-    border: none;
-    
+
+#color_bar.Middle {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    display: grid;
+    grid-template-columns: 15fr 45fr 5fr 45fr 25fr 45fr 45fr 5fr 45fr 5fr 45fr 5fr 45fr 5fr 45fr;    
+    left:0px;
+    position:relative;
+    z-index: 10;
+    /* border-bottom: 1px solid black; */
 }
+
+
 #pA {
     background-color: white;
 }
 
 #pC {
     background-color: rgb(255, 255, 255);
-    border-right: solid !important;
-    border-width: 1px !important;
-    border-color: rgba(0, 0, 0, 0.2) !important;
+    
 }
 
 #pL {
     background-color: white;
-    border-left: solid !important;
-    border-width: 1px !important;
-    border-color: rgba(0, 0, 0, 0.2) !important;
+   
+}
+#color_bar div {
+    height: 14px;
+    border: none;  
+    border-left: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
 }
 .tooltip-container {
     position: relative;

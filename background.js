@@ -1,11 +1,24 @@
 // Defining the new time slots
-const times = {
-    weekday: [0, 800, 805, 915, 1020, 1050, 1200, 1250, 1415, 1520],
-};
+// const times = {
+//     weekday: [0, 800, 805, 915, 1020, 1050, 1200, 1250, 1415, 1520],
+// };
 
 const schedule = {
     NAVY: {
         dayA: ['violet', 'pink', 'red', 'yellow', 'orange'],
+        dayB: ['green', 'blue', 'tan', 'violet', 'pink'],
+        dayC: ['yellow', 'red', 'orange', 'green', 'blue'],
+        dayD: ['tan', 'violet', 'pink', 'red', 'yellow'],
+        dayE: ['orange', 'green', 'blue', 'tan', 'violet'],
+        dayF: ['pink', 'red', 'yellow', 'orange', 'green'],
+        dayG: ['blue', 'tan', 'violet', 'pink', 'red'],
+        dayH: ['yellow', 'orange', 'green', 'blue', 'tan']
+    }
+};
+
+const schedule_middle = {
+    NAVY: {
+        dayA: ['violet', 'pink', 'red', 'tan', 'yellow', 'orange'],
         dayB: ['green', 'blue', 'tan', 'violet', 'pink'],
         dayC: ['yellow', 'red', 'orange', 'green', 'blue'],
         dayD: ['tan', 'violet', 'pink', 'red', 'yellow'],
@@ -35,10 +48,12 @@ function getToday() {
                 if (date === currentDate) {
                     correctDay = scheduleDay.trim()
                     console.log(correctDay)
-                    colors = schedule.NAVY[correctDay];
+                    console.log("ok");
+                    colorsUpper = schedule.NAVY[correctDay];
+                    colorsMiddle = schedule_middle.NAVY[correctDay];
                     let dayIcon = correctDay.slice(-1);
                     setIcon(`images/${week}/${dayIcon}-16.png`);
-                    resolve(colors); // resolve the promise with colors
+                    resolve({ upper: colorsUpper, middle: colorsMiddle }); // resolve the promise with colors for both Upper and Middle
                     showAll();
                     return;
                 }
