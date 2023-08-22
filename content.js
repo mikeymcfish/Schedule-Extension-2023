@@ -36,9 +36,9 @@ window.onload = function() {
     var date = new Date();
     var time = date.getHours() * 100 + date.getMinutes();
     console.log(time);
-    // currTime = time - 800;
-    // currLeft = (time/720) * 100;
-    currLeft = (time/2400) * 100;
+    currTime = time - 800;
+    currLeft = ((time - 800) / 720) * 100;
+    //currLeft = (time/2400) * 100;
     floatLeft = currLeft + 0.0;
     stringLeft = floatLeft + "%";
     console.log(stringLeft);
